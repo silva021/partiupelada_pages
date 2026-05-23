@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partiu Pelada</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const groupId = params.get("groupId");
+    const deeplink = `partiupelada://shared_group?groupId=${groupId}`;
+    window.location.replace(deeplink);
+    setTimeout(() => {
+      window.location.href = "https://play.google.com/store/apps/details?id=com.silva021.partiupelada";
+    }, 2000);
+  </script>
+</head>
+<body>
+  <p>Redirecionando para o app...</p>
+  <p>Se não abrir, <a href="https://play.google.com/store/apps/details?id=com.silva021.partiupelada">clique aqui</a>.</p>
+</body>
+</html>
